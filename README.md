@@ -8,7 +8,7 @@ Duktape
 :warning: **Master branch is undergoing incompatible changes for Duktape 3.x**.
 To track Duktape 2.x, follow the `v2-maintenance` branch.
 
-Introduction
+Introduction:
 ------------
 
 [Duktape](http://duktape.org/) is an **embeddable Javascript** engine,
@@ -18,7 +18,7 @@ Duktape is easy to integrate into a C/C++ project: add `duktape.c`,
 `duktape.h`, and `duk_config.h` to your build, and use the Duktape API
 to call ECMAScript functions from C code and vice versa.
 
-Main features:
+Main features:-
 
 * Embeddable, portable, compact
 * ECMAScript E5/E5.1 compliant, with some semantics updated from ES2015+
@@ -46,7 +46,7 @@ as both binaries and in unpacked form as git tags.
 
 Have fun!
 
-Support
+Support:
 -------
 
 * Duktape Wiki: [wiki.duktape.org](http://wiki.duktape.org)
@@ -54,14 +54,14 @@ Support
 * Bugs and feature requests: [GitHub issues](https://github.com/svaarala/duktape/issues)
 * General discussion: IRC `#duktape` on `chat.freenode.net` ([webchat](https://webchat.freenode.net))
 
-About this repository
+About this repository:
 ---------------------
 
 This repository is **intended for Duktape developers only**, and contains
 Duktape internals: test cases, internal documentation, sources for the
 duktape.org web site, etc.
 
-Getting started: end user
+Getting started: end user:
 -------------------------
 
 When embedding Duktape in your application you should use the packaged source
@@ -86,7 +86,7 @@ For example, to enable fastint support (example for Linux):
 
     # src-custom/ will now contain: duktape.c, duktape.h, duk_config.h.
 
-You can download and install duktape using the [vcpkg](https://github.com/Microsoft/vcpkg) dependency manager:
+You can download and install duktape using the [vcpkg](https://github.com/Microsoft/vcpkg) dependency manager:-
    
     $ git clone https://github.com/Microsoft/vcpkg.git
     $ cd vcpkg
@@ -100,11 +100,11 @@ You can also clone this repository, make modifications, and build a source
 distributable on Linux, macOS, and Windows using `python util/dist.py`.
 You'll need Python 2 and Python YAML binding.
 
-Getting started: modifying and rebuilding the distributable
+Getting started: modifying and rebuilding the distributable:
 -----------------------------------------------------------
 
 If you intend to change Duktape internals and want to rebuild the source
-distributable in Linux, macOS, or Windows:
+distributable in Linux, macOS, or Windows:-
 
     # Linux; can often install from packages or using 'pip'
     $ sudo apt-get install python python-yaml
@@ -124,7 +124,7 @@ The source distributable directory will be in `dist/`.
 
 For platform specific notes see http://wiki.duktape.org/DevelopmentSetup.html.
 
-Getting started: other development (Linux only)
+Getting started: other development (Linux only):
 -----------------------------------------------
 
 Other development stuff, such as building the website and running test cases,
@@ -132,7 +132,7 @@ is based on a `Makefile` **intended for Linux only**.  See detailed
 instructions in http://wiki.duktape.org/DevelopmentSetup.html.
 
 There are some Docker images which can simplify the development setup.
-These are also **intended for Linux only**.  For example:
+These are also **intended for Linux only**.  For example:-
 
     # Build Docker images.  This takes a long time.
     $ make docker-images
@@ -151,7 +151,7 @@ These are also **intended for Linux only**.  For example:
     # For non-native images you may need:
     # https://github.com/multiarch/qemu-user-static
 
-Branch policy
+Branch policy:
 -------------
 
 * The `master` branch is used for active development.  Even though pull requests
@@ -181,7 +181,7 @@ Branch policy
   on master.  The 1.6.0 and 1.7.0 releases were made from `v1-maintenance`
   for example.
 
-Versioning
+Versioning:
 ----------
 
 Duktape uses [Semantic Versioning](http://semver.org/) for official
@@ -193,7 +193,7 @@ compliance fixes are made in minor versions even when they are technically
 not backwards compatible.  See
 [Versioning](http://duktape.org/guide.html#versioning) for details.
 
-Reporting bugs
+Reporting bugs:
 --------------
 
 See [CONTRIBUTING.md](https://github.com/svaarala/duktape/blob/master/CONTRIBUTING.md).
@@ -201,12 +201,12 @@ See [CONTRIBUTING.md](https://github.com/svaarala/duktape/blob/master/CONTRIBUTI
 Security critical GitHub issues (for example anything leading to a segfault)
 are tagged `security`.
 
-Contributing
+Contributing:
 ------------
 
 See [CONTRIBUTING.md](https://github.com/svaarala/duktape/blob/master/CONTRIBUTING.md).
 
-Copyright and license
+Copyright and license:
 ---------------------
 
 See [AUTHORS.rst](https://github.com/svaarala/duktape/blob/master/AUTHORS.rst)
